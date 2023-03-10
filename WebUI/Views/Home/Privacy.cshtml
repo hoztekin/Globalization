@@ -3,4 +3,15 @@
 }
 <h1>@ViewData["Title"]</h1>
 
+
+
 <p>Use this page to detail your site's privacy policy.</p>
+
+ @if (Thread.CurrentThread.CurrentUICulture.Name == "tr-TR")
+                        {
+                            <H4>Türkçe çalıştı</H4>
+                        }
+                        else@if (true)
+                        {
+                            <H4>İngilizce Çalıştı</H4>
+                        }

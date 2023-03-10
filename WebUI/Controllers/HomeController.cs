@@ -18,8 +18,10 @@ namespace WebUI.Controllers
 
 		public IActionResult Index()
 		{
+			
+
 			ViewBag.WelcomeMessage = _localization.Getkey("str_welcome_message").Value;
-			var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+			//var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
 			return View();
 		}
 
