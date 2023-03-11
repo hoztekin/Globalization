@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="about" xml:space="preserve">
+    <value>&lt;h3&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, laudantium.&lt;/h3&gt;</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Posta</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Kayıt</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Zorunlu Alan</value>
+  </data>
   <data name="str_welcome_message" xml:space="preserve">
     <value>Welcome in Turkish</value>
   </data>

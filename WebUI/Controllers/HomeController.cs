@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebUI.Models;
+using WebUI.ViewModels;
 
 namespace WebUI.Controllers
 {
@@ -21,7 +22,7 @@ namespace WebUI.Controllers
 			
 
 			ViewBag.WelcomeMessage = _localization.Getkey("str_welcome_message").Value;
-			//var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+			var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
 			return View();
 		}
 
@@ -34,6 +35,19 @@ namespace WebUI.Controllers
 
 			return Redirect(Request.Headers["Referer"].ToString());
 		}
+
+
+		public IActionResult Register() 
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult Register(RegisterViewModel model)
+		{
+			return View();
+		}
+
 
 		public IActionResult Privacy()
 		{
